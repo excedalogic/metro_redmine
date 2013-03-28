@@ -2,6 +2,31 @@
 
 /* A1 theme version 1.0.8 by Kirill Bezrukov www.redminecrm.com */
 
+:focus {
+    outline: thin dotted;
+}
+a:hover, a:active {
+    outline: 0 none;
+}
+h1 {
+    font-size: 2em;
+}
+h2 {
+    font-size: 1.5em;
+}
+h3 {
+    font-size: 1.17em;
+}
+h4 {
+    font-size: 1em;
+}
+h5 {
+    font-size: 0.83em;
+}
+h6 {
+    font-size: 0.75em;  
+}
+
 #header {
     background: #cccccc repeat-x 0px 0px;
     height: auto;
@@ -14,17 +39,25 @@
         color: #000;
         -webkit-text-shadow: 0 -1px #cccccc;
         text-shadow: 0 -1px #cccccc;
-        font-size: 24px;
-        font-weight: normal;
+         font-size: 22pt;
+    font-weight: 200;
+    letter-spacing: 0.01em;
+    line-height: 22pt;
     }
 
     #header h1 a.ancestor {
-        font-size: 100%;
+        font-size: 22pt;
+    font-weight: 100;
+    letter-spacing: 0.01em;
+    line-height: 22pt;
     }
 
     #header a {
         color: #7e3878;
-        font-size: 26px;
+        font-size: 22pt;
+    font-weight: 100;
+    letter-spacing: 0.01em;
+    line-height: 22pt;
     }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
@@ -39,16 +72,24 @@
     }
 }
 
+p.other-formats {
+    color: #666666;
+    font-size: 11pt;
+    text-align: right;
+}
 
 h1, h2, h3, h4 {
     font-family: 'Segoe UI', 'Open Sans', Verdana, Arial, Helvetica, sans-serif;
-    font-weight: normal;
+    font-weight: 200;
 }
 
 body, #wrapper {
     font-family: 'Segoe UI', 'Open Sans', Verdana, Arial, Helvetica, sans-serif;
     background: none repeat 0px 0px #FFFFFF;
-    font-weight: normal;
+    font-weight: 300;
+    font-size:11pt;
+    letter-spacing:0.02em;
+    line-height:14pt;
 }
 
 div.issues h3 {
@@ -82,15 +123,22 @@ a.atom {
     background: #fff;
     padding: 7px 0px 2px 0px;
     color: #000;
-    font-size: small;
+    font-size: 11pt;
+    font-weight:300;
     margin: 5px 5%;
 }
 
-    #top-menu a {
+    #top-menu a,a:link {
         color: #7e3878;
-        font-weight: normal;
         margin-right: 8px;
-        font-size: small;
+        font-weight: 400;
+        font-size: 11pt;
+        line-height:13pt;
+        padding-left:0px !important;
+    }
+
+    #top-menu a.selected,a:hover{
+        padding-left:0px !important;
     }
 
     #top-menu #loggedas {
@@ -100,7 +148,6 @@ a.atom {
     }
 
 div.flash {
-    border: 0px solid;
     border: 0px solid;
     -webkit-text-shadow: 0 0px white;
     text-shadow: 0 0px white;
@@ -130,19 +177,73 @@ div.flash.notice {
     border-color: none;
     color: #fff;
     margin: 0 5%;
-    font-size: small;
-    font-weight: normal;
+    font-size:11pt;
+    font-weight: 300;
 }
 
     div.flash.notice a, a:link {
         color: white;
+        font-weight: 400;
+        font-size: 11pt;
+        line-height:13pt;
+        padding-left:0px !important;
     }
+
+    div.flash.notice a.selected,a:hover{
+        padding-left:0px !important;
+    }
+
+    table.attributes th {
+    font-weight: 600;
+    text-align: left;
+    vertical-align: top;
+}
 
 #errorExplanation, .nodata, .warning {
     border: 1px solid silver;
     -webkit-text-shadow: 0 0px none;
     text-shadow: 0 0px none;
     font-weight: normal;
+}
+
+.issue .author a, a:link{
+    padding-left:0px !important;
+}
+
+.issue .author a.selected, a:hover{
+    padding-left:0px !important;
+}
+
+#content #issue-form a, a:link{
+    padding-left:0px !important;
+}
+
+#content #issue-form a.selected, a:hover{
+    padding-left:0px !important;
+}
+
+#content #issue-form .box #watchers_form .search_for_watchers a, a:link{
+    padding-left:15px !important;
+}
+
+#content #issue-form .box #watchers_form .search_for_watchers a.selected,a:hover{
+    padding-left:15px !important;
+}
+
+#content #issue-form .box #attachments_form .add_attachment a, a:link{
+    padding-left:15px !important;
+}
+
+#content #issue-form .box #attachments_form .add_attachment a.selected,a:hover{
+    padding-left:15px !important;
+}
+
+#content #issue-form .box #all_attributes a, a:link{
+    padding-left:15px !important;
+}
+
+#content #issue-form .box #all_attributes a.selected,a:hover{
+    padding-left:15px !important;
 }
 
 .nodata, .warning {
@@ -181,17 +282,76 @@ div#main.nosidebar div#content {
     background-image: url("../images/Winamp.png");
 }*/
 
-#admin-menu a {
-    line-height: 2em;
-}
-
-#admin-menu a {
+#admin-menu a, a:link {
     padding-top: 0px;
     padding-bottom: 0px;
-    padding-left: 30px;
-    background-position: 0 40%;
+    padding-left: 30px !important;
+    background-position: 5% !important;
     background-repeat: no-repeat;
     overflow: hidden;
+    font-weight: 400;
+    font-size: 11pt;
+    line-height:20pt;
+}
+
+#admin-menu a.selected, a:hover{
+    padding-left: 30px !important;
+    text-decoration:underline;
+}
+
+#content #activity dl dt a, a:link{
+    padding-left:0px !important;
+}
+
+#content #activity dl dt a.selected, a:hover{
+    padding-left:0px !important;
+}
+
+#content #activity dl dd a, a:link{
+    padding-left:0px !important;
+}
+
+#content #activity dl dd a.selected, a:hover{
+    padding-left:0px !important;
+}
+
+#sidebar form a, a:link{
+    padding-left: 0px !important;
+}
+
+#sidebar form a.selected, a:hover{
+    padding-left: 0px !important;
+}
+
+#sidebar a, a:link{
+    padding-left: 0px !important;
+}
+
+#sidebar a.selected, a:hover{
+    padding-left: 0px !important;
+}
+
+#footer .bg1 .bgr a,a:link{
+    padding-left: 0px !important;
+}
+
+#footer .bg1 .bgr a.selected,a:hover{
+    padding-left: 0px !important;
+    text-decoration:underline;
+}
+
+#content h2 a,a:link{
+    color:#fff;
+    font-size:17pt;
+    font-weight:300;
+}
+
+#content h2 a.selected,a:hover{
+    color:#fff;
+    padding-left:0px;
+    text-decoration:underline;
+    font-size:11pt;
+    font-weight:400;
 }
 
     #admin-menu a.projects {
@@ -247,9 +407,9 @@ div#main.nosidebar div#content {
     }
 
 .icon {
-    background-position: 5% 40%;
+    background-position: 8% !important;
     background-repeat: no-repeat;
-    padding: 2px 3px 3px 20px;
+    padding-left:25px !important;
 }
 
 .toggle-multiselect {
@@ -265,7 +425,8 @@ div#main.nosidebar div#content {
     background: #fff;
     border: 1px solid #D9D9D9;
     zoom: 1;
-    font-size: small;
+    font-size: 11pt;
+    font-weight:300;
     -moz-border-radius: 0px;
     -webkit-border-radius: 0px;
     border-radius: 0px;
@@ -275,7 +436,10 @@ div#main.nosidebar div#content {
 }
 
 #sidebar h3{
-    font-size:16px;
+    font-size: 16pt;
+    font-weight: 200;
+    letter-spacing: 0.01em;
+    line-height: 24px;
 }
 
 div#content > h2,
@@ -297,11 +461,13 @@ div#content > #add-document > h2 {
     -moz-border-radius-topright: 0px;
     padding: 12px 20px;
     /*margin: -6px -10px 10px;*/
-    letter-spacing: 0px;
+    letter-spacing: 0.01em;
     /*	border-top: 1px solid #DADEE5;
 	border-bottom: 1px solid #DADEE5;
 */
-    font-weight: normal;
+    font-size:16pt;
+    line-height:24px;
+    font-weight: 200;
     color: #FFFFFF;
 }
 
@@ -375,7 +541,7 @@ p.subtitle {
 }
 
 h3, .wiki h2 {
-    font-size: 20px;
+    font-size: 16pt;
 }
 
 h4, .wiki h3 {
@@ -390,11 +556,20 @@ h4, .wiki h3 {
     border: 0px outset #fff;
     background-color: #7e3878;
     border-radius: 2px;
-    padding: 5px 25px 5px 25px;
+    /*padding: 5px 25px 5px 25px;*/
     color: #FFF;
     margin-left: 1%;
-    font-size: small;
-    font-weight: normal;
+    font-size: 11pt;
+    font-weight: 300;
+    padding-left:25px !important;
+    padding-right:25px !important;
+    padding-bottom:5px !important;
+    padding-top:5px !important;
+}
+
+
+a.sort.asc {
+    background-image: url("../images/sort_asc.png");
 }
 
     /*.icon-edit {
@@ -403,6 +578,7 @@ h4, .wiki h3 {
 
     .contextual a:hover, .contextual a:visited:hover {
         text-decoration: underline;
+        padding-left:25px !important;
     }
 
 div.filters h2 .scope_title a {
@@ -428,7 +604,7 @@ div#content > div.wiki {
 #main-menu {
     left: 0px;
     width: 100%;
-    height: 50px;
+    height: 60px;
     /*	overflow: hidden;*/
     background: none repeat-x Transparent;
     /*opacity:0.6;
@@ -439,12 +615,15 @@ div#content > div.wiki {
         background-color: #999999;
         display: block;
         float: left;
-        padding: 6px 12px;
+        padding-top: 6px !important;
+        padding-right: 12px !important;
+        padding-bottom:6px !important;
+        padding-left:12px !important;
         color: #fff;
-        font-size: small;
+        font-size: 11pt;
+        font-weight:300;
         -webkit-text-shadow: 0px 0px none;
         text-shadow: 0px 0px none;
-        font-weight: normal;
         text-decoration: none;
         -moz-border-radius: 0px;
         -webkit-border-radius: 0px;
@@ -455,7 +634,6 @@ div#content > div.wiki {
             -moz-box-shadow: 0px 0px 0px 0px none;
             -webkit-box-shadow: 0px 0px 0px 0px none;
             box-shadow: 0px 0px 0px 0px none;
-            padding: 6px 12px;
             -webkit-text-shadow: 0px 0px none;
             text-shadow: 0px 0px none;
             color: #FFF;
@@ -463,23 +641,35 @@ div#content > div.wiki {
             border-right: none;
             border-bottom: none;
             background: #008287 repeat-x;
+            padding-top: 6px !important;
+        padding-right: 12px !important;
+        padding-bottom:6px !important;
+        padding-left:12px !important;
         }
 
             #main-menu li a.selected:hover {
                 background-color: #444;
                 color: #fff;
                 text-decoration: none;
+                padding-top: 6px !important;
+        padding-right: 12px !important;
+        padding-bottom:6px !important;
+        padding-left:12px !important;
             }
 
         #main-menu li a:hover {
             background-color: #444;
             color: #fff;
             text-decoration: none;
+            padding-top: 6px !important;
+        padding-right: 12px !important;
+        padding-bottom:6px !important;
+        padding-left:12px !important;
         }
 
 #header {
     padding-top: 10px;
-    padding-bottom: 50px;
+    padding-bottom: 60px;
     padding-left: 10px;
     background-position-y: 11%;
 }
@@ -512,8 +702,8 @@ div.details {
     margin-bottom: 6px;
     border: 1px solid none;
     margin: 0;
-    font-size: small;
-    font-weight: normal;
+    font-size: 11pt;
+    font-weight: 300;
 }
 
 div.issue.tooltip {
@@ -534,7 +724,8 @@ div.contact.details, div.deal.details {
     background-color: #CCCCCC;
     border: 0px;
     color: #000;
-    font-size: small;
+    font-size: 11pt;
+    font-weight:300;
 }
 
 /* Headers */
@@ -558,6 +749,15 @@ h2, h3, h4, .wiki h1, .wiki h2, .wiki h3 {
 
 table.list tbody td, table.list tbody tr:hover td {
     border: solid 1px #d7d7d7;
+         font-weight: 200;
+         font-size:11pt;
+         line-height:20pt;
+}
+
+
+td.username img.gravatar {
+    margin: 0 0.5em 0 0;
+    vertical-align: middle;
 }
 
 table.list thead th {
@@ -575,8 +775,8 @@ table.list thead th {
 }
 
     #quick-search form label a, a:link {
-        font-size: medium;
-        font-weight: normal;
+        font-size: 11pt;
+        font-weight: 400;
     }
 
 /* Grid styles by priorities */
@@ -760,8 +960,10 @@ option {
 }
 
 .box {
-    font-size: small;
-    font-weight: normal;
+font-size: 10.5pt;
+    font-weight: 200;
+    letter-spacing: 0.01em;
+    line-height: 15pt;
     background-color: white;
     -moz-border-radius: 0px;
     -webkit-border-radius: 0px;
@@ -775,8 +977,9 @@ option {
 
 .tabular label {
     float: left;
-    font-size: small;
-    font-weight: normal;
+    font-size: 11pt;
+    font-weight: 300;
+    letter-spacing: 0.01em;
     margin-left: -180px;
     text-align: right;
     width: 175px;
@@ -788,8 +991,8 @@ option {
     margin-bottom: 1.2em;
     overflow: hidden;
     position: relative;
-    font-size: medium;
-    font-weight: normal;
+    font-size: 13pt;
+    font-weight: 300;
 }
 
 div.projects h3 {
@@ -800,11 +1003,18 @@ div.projects h3 {
 
 div.projects ul li a, a:link, a:visited {
     color: #7e3878;
-    font-size: 15px;
+    font-size: 11pt;
+    font-weight:400;
+    padding-left:20px !important;
 }
 
     div.projects ul li a:hover, a:active {
         text-decoration: underline;
+        padding-left:20px !important;
+    }
+
+    div.projects ul li a.selected{
+        padding-left:20px !important;
     }
 
 .wiki img {
@@ -823,11 +1033,28 @@ div.wiki pre, .wiki pre {
 }
 
 .controller-wiki div#content > div.contextual {
-    margin-top: 3px;
+    margin-top: 20px;
 }
 
-div#content > div.wiki {
-    padding-top: 15px;
+.total-hours {
+    font-size: 12pt;
+    font-weight: normal;
+}
+
+.total-hours span.hours-int {
+    font-size: 12pt;
+}
+
+.icon-move {
+    background-image: url("../images/Edit.png");
+}
+
+.icon-history {
+    background-image: url("../images/History.png");
+}
+
+.icon-cancel {
+    background-image: url("../images/in.png");
 }
 
 ul.projects.root {
@@ -936,7 +1163,7 @@ body.action-login #login-form table {
     margin: 0px;
     border: 1px solid #DDD;
     padding: 6px;
-    font-size: 140%;
+    font-size: 100%;
     -moz-border-radius: 2px;
     -webkit-border-radius: 2px;
     border-radius: 2px;
@@ -954,8 +1181,8 @@ body.action-login #login-form table {
 }
 
 #login-form label {
-    font-weight: normal;
-    font-size: small;
+    font-weight: 300;
+    font-size: 11pt;
 }
 
 #content .tabs ul {
@@ -971,7 +1198,7 @@ body.action-login #login-form table {
         border-bottom: 0px solid none;
         bottom: 0;
         margin: 0;
-        padding-left: 0.5em;
+        padding-left:0px;
     }
 
         #content .tabs ul li a {
@@ -983,35 +1210,40 @@ body.action-login #login-form table {
             border-top-right-radius: 0px;
             -moz-border-radius-topleft: 0px;
             -moz-border-radius-topright: 0px;
-            font-weight: normal;
-            font-size: small;
+            font-weight: 300;
+            font-size: 11pt;
             background: none;
+            padding-left:6px !important;
             color: #000;
         }
 
             #content .tabs ul li a:hover {
                 background-color: #444;
                 color: #fff;
+                padding-left:6px !important;
             }
 
             #content .tabs ul li a.selected {
                 background-color: #b91d47;
                 color: #fff;
+                padding-left:6px !important;
                 border: 0px solid none;
             }
 
                 #content .tabs ul li a.selected:hover {
                     background-color: #444;
                     color: #fff;
+                    padding-left:6px !important;
                 }
 
 #sidebar a.selected {
     background-color: transparent;
-    color: gray;
+    color: #7e3878;
+    text-decoration:underline;
     font-weight: normal;
     padding-top: 0px;
     padding-bottom: 0px;
-    padding-left: 32px !important;
+    /*padding-left: 32px;*/
     overflow: hidden;
 }
 
@@ -1039,7 +1271,7 @@ input.live_search_field {
 }
 
 .live_search input.live_search_field, label#search_overlabel {
-    font-size: 12px !important;
+    font-size: 11pt !important;
 }
 
 label#search_overlabel {
@@ -1096,7 +1328,7 @@ span.tag a, span.deal-status {
     color: white;
     -webkit-text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.25);
     text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.25);
-    font-size: 9px !important;
+    font-size: 10pt !important;
     line-height: 1 !important;
     margin: 2px 0px 2px 0px;
     text-decoration: none;
@@ -1137,7 +1369,7 @@ span.tag a, span.deal-status {
     .contacts-tags-edit ul.tagit li.tagit-choice {
         -webkit-text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.25);
         text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.25);
-        font-size: 9px !important;
+        font-size: 10pt !important;
         color: #6b7b91 !important;
         line-height: 17px !important;
         font-weight: bold !important;
@@ -1205,7 +1437,7 @@ span.tag a, span.deal-status {
 /*Contacts*/
 
 .small-card td.name h2 {
-    font-size: 16px;
+    font-size: 15pt;
 }
 
 body.controller-contacts #content,
@@ -1371,7 +1603,7 @@ a.buy-button.blue {
 .ui-dialog .ui-dialog-title {
     float: left;
     margin: .1em 16px .1em 0;
-    font-size: 16px;
+    font-size: 16pt;
     padding: 2px 10px 1px 0px;
     margin: 0 0 10px 0;
     color: #444;
@@ -1413,7 +1645,7 @@ input[type=radio] {
         content: "";
         color: #1a1a1a;
         z-index: 2;
-        font-size: 16px;
+        font-size: 11pt;
         font-weight: bold;
         left: 5px;
         margin-left: 0;
@@ -1565,7 +1797,7 @@ table {
         table tbody tr td {
             font-family: 'Segoe UI Semilight', 'Open Sans', Verdana, Arial, Helvetica, sans-serif;
             font-weight: normal;
-            font-size: 10pt;
+            font-size: 11pt;
             line-height: 20px;
             padding: 3px 10px;
             -moz-box-sizing: border-box;
@@ -1659,4 +1891,24 @@ input[type="radio"] {
     margin-bottom: 10px;
     margin-top: 10px;
     cursor: pointer;
+}
+
+#content #wiki_add_attachment p a, a:link{
+    padding-left:0px !important;
+}
+
+#content #wiki_add_attachment p a.selected, a:hover{
+    padding-left:0px !important;
+}
+
+#content .other_formats span a, a:link{
+    padding-left:0px !important;
+}
+
+#content .other_formats span a.selected, a:hover{
+    padding-left:0px !important;
+}
+
+a.atom {
+    padding-left: 20px !important;
 }
