@@ -2,36 +2,11 @@
 
 /* A1 theme version 1.0.8 by Kirill Bezrukov www.redminecrm.com */
 
-:focus {
-    outline: thin dotted;
-}
-a:hover, a:active {
-    outline: 0 none;
-}
-h1 {
-    font-size: 2em;
-}
-h2 {
-    font-size: 1.5em;
-}
-h3 {
-    font-size: 1.17em;
-}
-h4 {
-    font-size: 1em;
-}
-h5 {
-    font-size: 0.83em;
-}
-h6 {
-    font-size: 0.75em;  
-}
-
 #top-menu {
     background: #fff;
     padding: 7px 0px 2px 0px;
     color: #000;
-    font-size: 11pt;
+    font-size: 10pt;
     font-weight:300;
     margin: 5px 5%;
 }
@@ -40,7 +15,7 @@ h6 {
         color: #7e3878;
         margin-right: 8px;
         font-weight: 400;
-        font-size: 11pt;
+        font-size: 10pt;
         line-height:13pt;
         padding-left:0px !important;
     }
@@ -67,25 +42,25 @@ h6 {
         color: #000;
         -webkit-text-shadow: 0 -1px #cccccc;
         text-shadow: 0 -1px #cccccc;
-         font-size: 22pt;
+         font-size: 21pt;
     font-weight: 200;
     letter-spacing: 0.01em;
-    line-height: 22pt;
+    line-height: 21pt;
     }
 
     #header h1 a.ancestor {
-        font-size: 22pt;
+        font-size: 21pt;
     font-weight: 100;
     letter-spacing: 0.01em;
-    line-height: 22pt;
+    line-height: 21pt;
     }
 
     #header a {
         color: #7e3878;
-        font-size: 22pt;
+        font-size: 21pt;
     font-weight: 100;
     letter-spacing: 0.01em;
-    line-height: 22pt;
+    line-height: 21pt;
     }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
@@ -597,7 +572,7 @@ div#content > div.wiki {
 #main-menu {
     left: 0px;
     width: 100%;
-    height: 60px;
+    height: 50px;
     /*	overflow: hidden;*/
     background: none repeat-x Transparent;
     /*opacity:0.6;
@@ -608,9 +583,9 @@ div#content > div.wiki {
         background-color: #999999;
         display: block;
         float: left;
-        padding-top: 6px !important;
+        padding-top: 3px !important;
         padding-right: 12px !important;
-        padding-bottom:6px !important;
+        padding-bottom:3px !important;
         padding-left:12px !important;
         color: #fff;
         font-size: 11pt;
@@ -634,9 +609,9 @@ div#content > div.wiki {
             border-right: none;
             border-bottom: none;
             background: #008287 repeat-x;
-            padding-top: 6px !important;
+            padding-top: 3px !important;
         padding-right: 12px !important;
-        padding-bottom:6px !important;
+        padding-bottom:3px !important;
         padding-left:12px !important;
         }
 
@@ -644,9 +619,9 @@ div#content > div.wiki {
                 background-color: #444;
                 color: #fff;
                 text-decoration: none;
-                padding-top: 6px !important;
+                padding-top: 3px !important;
         padding-right: 12px !important;
-        padding-bottom:6px !important;
+        padding-bottom:3px !important;
         padding-left:12px !important;
             }
 
@@ -654,9 +629,9 @@ div#content > div.wiki {
             background-color: #444;
             color: #fff;
             text-decoration: none;
-            padding-top: 6px !important;
+            padding-top: 3px !important;
         padding-right: 12px !important;
-        padding-bottom:6px !important;
+        padding-bottom:3px !important;
         padding-left:12px !important;
         }
 
@@ -997,7 +972,7 @@ div.projects h3 {
 
 div.projects ul li a, a:link, a:visited {
     color: #7e3878;
-    font-size: 11pt;
+    font-size: 10.5pt;
     font-weight:400;
     padding-left:20px !important;
 }
@@ -1853,7 +1828,7 @@ table {
 
 span.search_for_watchers a, span.add_attachment a {
     background: url("../images/Document-Add.png") no-repeat scroll 0 50% transparent;
-    padding-left: 16px;
+    padding-left: 20px !important;
 }
 
 .icon-edit {
@@ -1978,6 +1953,10 @@ a.collapsible{
 }
 
 #wrapper3 #main #content form .box p .help a, a:link{
+    padding-left:25px !important;
+}
+
+#content #wiki_form .box .help a, a:link{
     padding-left:25px !important;
 }
 
