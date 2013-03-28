@@ -27,6 +27,34 @@ h6 {
     font-size: 0.75em;  
 }
 
+#top-menu {
+    background: #fff;
+    padding: 7px 0px 2px 0px;
+    color: #000;
+    font-size: 11pt;
+    font-weight:300;
+    margin: 5px 5%;
+}
+
+    #top-menu a,a:link {
+        color: #7e3878;
+        margin-right: 8px;
+        font-weight: 400;
+        font-size: 11pt;
+        line-height:13pt;
+        padding-left:0px !important;
+    }
+
+    #top-menu a.selected,a:hover{
+        padding-left:0px !important;
+    }
+
+    #top-menu #loggedas {
+        color: #000;
+        float: right;
+        margin-right: 0.5em;
+    }
+
 #header {
     background: #cccccc repeat-x 0px 0px;
     height: auto;
@@ -118,34 +146,6 @@ a.atom {
     background: #e6e6e6;
     padding: 2% 5% 2% 5%;
 }
-
-#top-menu {
-    background: #fff;
-    padding: 7px 0px 2px 0px;
-    color: #000;
-    font-size: 11pt;
-    font-weight:300;
-    margin: 5px 5%;
-}
-
-    #top-menu a,a:link {
-        color: #7e3878;
-        margin-right: 8px;
-        font-weight: 400;
-        font-size: 11pt;
-        line-height:13pt;
-        padding-left:0px !important;
-    }
-
-    #top-menu a.selected,a:hover{
-        padding-left:0px !important;
-    }
-
-    #top-menu #loggedas {
-        color: #000;
-        float: right;
-        margin-right: 0.5em;
-    }
 
 div.flash {
     border: 0px solid;
@@ -331,15 +331,6 @@ div#main.nosidebar div#content {
     padding-left: 0px !important;
 }
 
-#footer .bg1 .bgr a,a:link{
-    padding-left: 0px !important;
-}
-
-#footer .bg1 .bgr a.selected,a:hover{
-    padding-left: 0px !important;
-    text-decoration:underline;
-}
-
 #content h2 a,a:link{
     color:#fff;
     font-size:17pt;
@@ -465,7 +456,7 @@ div#content > #add-document > h2 {
     /*	border-top: 1px solid #DADEE5;
 	border-bottom: 1px solid #DADEE5;
 */
-    font-size:16pt;
+    font-size:18pt;
     line-height:24px;
     font-weight: 200;
     color: #FFFFFF;
@@ -538,6 +529,8 @@ div#content > div.contextual {
 
 p.subtitle {
     margin: 0px 0 12px 0;
+    font-size:10pt;
+    color:#444;
 }
 
 h3, .wiki h2 {
@@ -767,6 +760,7 @@ table.list thead th {
     border-right-color: #d7d7d7;
     border-left-color: #d7d7d7;
     border-bottom-color: #d7d7d7;
+    line-height:20pt;
 }
 
 /*Quick search*/
@@ -1570,9 +1564,17 @@ a.buy-button.blue {
         padding: 12px 20px;
         /*margin: -6px -10px 10px;*/
         letter-spacing: 0px;
-        font-weight: normal;
+        font-size:18pt;
+        font-weight: 200;
         color: #FFFFFF;
     }
+
+    #projects-index ul.projects div.root a.project {
+    font-family: 'Segoe UI', 'Open Sans', Verdana, Arial, Helvetica, sans-serif;
+    font-size: 14pt;
+    font-weight: 300;
+    margin: 0 0 10px;
+}
 
 
 /*******************/
@@ -1909,6 +1911,89 @@ input[type="radio"] {
     padding-left:0px !important;
 }
 
+#content .other_formats span a.atom, a.atom:link{
+    padding-left:20px !important;
+}
+
+#content .other_formats span a.atom.selected, a.atom:hover{
+    padding-left:20px !important;
+}
+
 a.atom {
     padding-left: 20px !important;
+}
+
+.buttons {
+    font-size: 0.9em;
+    margin-bottom: 1.4em;
+    margin-top: 1em;
+}
+
+#content #query_form .buttons a, a:link{
+    padding-left:25px !important;
+}
+
+#content #query_form .buttons a.selected,a:hover{
+    padding-left:25px !important;
+}
+
+div#activity dt.me .time {
+    border-bottom: 1px solid #000;
+}
+div#activity dt .time {
+    color: #000;
+    font-size: 100%;
+}
+
+div#activity dd span.description, #search-results dd span.description {
+    color: #444;
+    display: block;
+}
+div#activity dd .description, #search-results dd .description {
+    font-style: italic;
+}
+div#activity dd, #search-results dd {
+    font-size: 10pt;
+    font-weight:200;
+}
+
+table tr td a, a:link{
+    padding-left:0px !important;
+}
+
+table tr td a.selected, a:hover{
+    padding-left:0px !important;
+}
+
+a.collapsible.collapsed {
+    background: url("../images/arrow_collapsed.png") no-repeat scroll -5px 40% transparent;
+}
+
+a.collapsible{
+    background: url("../images/arrow_expanded.png") no-repeat scroll -3px 40% transparent;
+}
+
+#content .splitcontentright .projects ul li a, a:link{
+    padding-left:0px !important;
+}
+
+#wrapper3 #main #content form .box p .help a, a:link{
+    padding-left:25px !important;
+}
+
+#content #query_form p a.icon{
+    padding-left:25px !important;
+}
+
+#footer .bg1 .bgr a,a:link{
+    padding-left: 0px !important;
+}
+
+#footer .bg1 .bgr a.selected,a:hover{
+    padding-left: 0px !important;
+    text-decoration:underline;
+}
+
+a.sort.desc {
+    background-image: url("../images/sort_desc.png");
 }
