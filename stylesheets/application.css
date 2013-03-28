@@ -600,7 +600,7 @@ table.list tr.issue a {
 
 /*Immediately*/
 tr.odd.priority-7, table.list tbody tr.odd.priority-7:hover {
-    color: #fff;
+    color: #444;
     font-weight: normal;
 }
 
@@ -609,7 +609,7 @@ tr.odd.priority-7 {
 }
 
 tr.even.priority-7, table.list tbody tr.even.priority-7:hover {
-    color: #fff;
+    color: #444;
     font-weight: normal;
 }
 
@@ -618,7 +618,7 @@ tr.even.priority-7 {
 }
 
 tr.priority-7 a, tr.priority-7:hover a {
-    color: #fff;
+    color: #444;
 }
 
 tr.odd.priority-7 td, tr.even.priority-7 td {
@@ -627,7 +627,7 @@ tr.odd.priority-7 td, tr.even.priority-7 td {
 
 /*High*/
 tr.odd.priority-5, table.list tbody tr.odd.priority-5:hover {
-    color: #fff;
+    color: #444;
 }
 
 tr.odd.priority-5 {
@@ -635,7 +635,7 @@ tr.odd.priority-5 {
 }
 
 tr.even.priority-5, table.list tbody tr.even.priority-5:hover {
-    color: #fff;
+    color: #444;
 }
 
 tr.even.priority-5 {
@@ -643,7 +643,7 @@ tr.even.priority-5 {
 }
 
 tr.priority-5 a {
-    color: #fff;
+    color: #444;
 }
 
 tr.odd.priority-5 td, tr.even.priority-5 td {
